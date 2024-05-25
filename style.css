@@ -1,0 +1,135 @@
+* {
+    /* font-family: "PT Sans Caption", sans-serif; */
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.interface {
+    min-height: 100vh;
+    flex-direction: column !important;
+    background-color: #f7ecde;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    margin: 0;
+
+}
+
+.container {
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    max-width: 1320px;
+    /* width: 100%; */
+    padding-right: calc(var(1.5rem) * .5);
+    padding-left: calc(var(1.5rem) * .5);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.container h1 {
+    font-size: 50px;
+    color: #0e0e0e;
+    isolation: isolate;
+    margin: 0;
+    position: relative;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.container .textOverlay::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+    padding-top: 50px;
+}
+
+.bookmark-body {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+.bookmark-body i {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.bookmark-body i::before {
+    content: "\f02e";
+}
+
+.bookmark-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    webkit-background-clip: text;
+    webkit-text-fill-color: transparent;
+}
+
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-submit {
+    background-color: #d1512d;
+    color: #fff;
+    border-radius: 0.375rem;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #bb4120;
+    border: #a03315;
+}
+
+thead {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+thead tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+/* 
+.dots {
+    border-width: 2px 0 0px 0;
+    border-style: dotted;
+    border-color: #352e28;
+} */
