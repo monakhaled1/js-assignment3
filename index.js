@@ -15,7 +15,6 @@ if (localStorage.getItem("bookmarksList")) {
     }
 }
 
-// =====> Display Function and adding click event to visit and delete buttons
 
 function displayBookmark(indexOfWebsite) {
     var userURL = bookmarks[indexOfWebsite].siteURL;
@@ -49,7 +48,6 @@ function displayBookmark(indexOfWebsite) {
             `;
     tableContent.innerHTML += newBookmark;
 
-    // =====> Adding Click Event to All delete buttons every time a new bookmark being added
 
     deleteBtns = document.querySelectorAll(".btn-delete");
     if (deleteBtns) {
@@ -60,7 +58,6 @@ function displayBookmark(indexOfWebsite) {
         }
     }
 
-    // =====> Adding Click Event to All visit buttons every time a new bookmark being added
 
     visitBtns = document.querySelectorAll(".btn-visit");
     if (visitBtns) {
@@ -72,14 +69,12 @@ function displayBookmark(indexOfWebsite) {
     }
 }
 
-// =====> Clear Input Function
 
 function clearInput() {
     siteName.value = "";
     siteURL.value = "";
 }
 
-// =====> Capitalize Function ==> take string and makes it capitalize
 
 function capitalize(str) {
     let strArr = str.split("");
@@ -87,7 +82,6 @@ function capitalize(str) {
     return strArr.join("");
 }
 
-// =====> Submit Function
 
 submitBtn.addEventListener("click", function () {
     if (
@@ -109,7 +103,6 @@ submitBtn.addEventListener("click", function () {
     }
 });
 
-// =====> Delete Function
 
 function deleteBookmark(e) {
     tableContent.innerHTML = "";
@@ -121,7 +114,6 @@ function deleteBookmark(e) {
     localStorage.setItem("bookmarksList", JSON.stringify(bookmarks));
 }
 
-// =====> Visit Function
 
 function visitWebsite(e) {
     var websiteIndex = e.target.dataset.index;
